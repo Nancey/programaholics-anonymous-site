@@ -1,0 +1,57 @@
+<!-- Course Project 
+ProjMaster.master
+By Felix Rodriguez
+Web 460
+Professor Henry
+DeVry University -->
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ProjMaster.master.cs" Inherits="ProjMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+    <title>Programaholics Anonymous</title>
+    <asp:ContentPlaceHolder id="HeadPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+<form id="form1" runat="server"> 
+<table style="padding: 10px; border: 1px solid black;"> 
+<tr style="background-color:lightcyan; text-align: center;"> 
+<td colspan="2"> 
+<!-- page headers --> 
+<h1>Programaholics Anonymous</h1> 
+<h2>Online support for those in need</h2> 
+<!-- Label for content pages to display user message --> 
+<strong><span style="color:black;"> 
+<asp:Label ID="lblUserFeedBack" Runat="server">Welcome user!</asp:Label> 
+</span></strong> 
+</td> 
+</tr>
+<tr style="vertical-align: top;"> 
+<td> 
+<!-- Left content area -->
+ <asp:ContentPlaceHolder ID="ContentPlaceHolder1" Runat="server"> 
+ </asp:ContentPlaceHolder>
+  </td>
+   <td> 
+   <!-- Right content area --> 
+   <asp:ContentPlaceHolder ID="ContentPlaceHolder2" Runat="server"> 
+ </asp:ContentPlaceHolder> 
+ </td> 
+</tr>
+<tr style="background-color:lightgrey; text-align: center;">
+ <td colspan="2"> 
+ <!-- page footer -->
+  Copyright DeVry University<br /> 
+ <strong>User's GUID:
+  <asp:Label ID="lblGUID" Runat="server" /></strong>
+   </td>
+    </tr>
+     </table>
+     </form>
+</body>
+</html>
