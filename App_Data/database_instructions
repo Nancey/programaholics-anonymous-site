@@ -1,0 +1,3 @@
+No code. Make sure to implement the users.accdb file into Visual Studio.
+Also, implement the tblUsers.xml. Both are integral as example cases.
+After, the project should have the matching xsd, xss and datasets following their implementation.
